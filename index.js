@@ -1,0 +1,1 @@
+import "../ajs_4_2/js/game.js"
