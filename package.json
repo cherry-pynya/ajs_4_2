@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "npx babel index.js"
+    "build": "npx babel index.js",
+    "lint": "eslint . --ext .js"
   },
   "repository": {
     "type": "git",
