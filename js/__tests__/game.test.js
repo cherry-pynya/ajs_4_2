@@ -81,4 +81,19 @@ test('one dead hero', ()=>{
     expect(result).toEqual(expected);
 })
 
+test('3 different amounts with toBe', ()=>{
+    const result = sortHeroes([
+        {name: 'мечник', health: 10},
+        {name: 'маг', health: 100},
+        {name: 'лучник', health: 80},
+    ]);
+
+    const expected = [
+        {name: 'маг', health: 100},
+        {name: 'лучник', health: 80},
+        {name: 'мечник', health: 10}
+    ];
+
+    expect(result).not.toBe(!expected);
+})
 
